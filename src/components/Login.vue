@@ -4,7 +4,7 @@
     <div class="login_box">
       <!-- 图标 -->
       <div class="login_logo">
-        <img src="../assets/点赞哥.jpg" alt="" />
+        <img src="../assets/logo.png" alt="" />
       </div>
       <!-- 登录表单 -->
       <el-form
