@@ -11,6 +11,13 @@ import axios from 'axios'
 // 个人搭建 http://127.0.0.1:8888/api/private/v1/
 // 网友共享 http://timemeetyou.com:8889/api/private/v1/
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+
+axios.interceptors.request.use(config => { 
+  // console.log(config);
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
+
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
